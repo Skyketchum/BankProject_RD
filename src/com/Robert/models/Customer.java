@@ -1,10 +1,11 @@
 package com.Robert.models;
 
-public class User extends Person {
+public class Customer extends Person {
 	
 	private String userName;
 	private String userPassWord;
 	private boolean doesQualifyForLoan;
+	private boolean loginInfoCheck;
 	private double accountBalance;
 	
 	//list of transactions
@@ -41,5 +42,11 @@ public class User extends Person {
 	}
 	public void setAccountBalance(double accountBalance) {
 		this.accountBalance = accountBalance;
+	}
+	
+	public void customerLogin() {
+		if(userName == userName && userPassWord == userPassWord) {
+			loginInfoCheck = true;
+		}
 	}
 }
